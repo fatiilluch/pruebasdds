@@ -1,0 +1,259 @@
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url('../fonts/montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-ExtraBold;
+    src: url('../fonts/montserrat/Montserrat-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url('../fonts/montserrat/Montserrat-Bold.ttf');
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    background: url('../images/fondoDDS.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    width: 390px;
+    background-color: transparent;
+    position: relative;
+}
+
+#login {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    background: url(images/logo.jpg) center absolute;
+}
+
+#nick {
+    font-family: Montserrat-ExtraBold;
+    font-size: 24px;
+    color: #8c1919;
+    line-height: 1.2;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+.itemForm {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    margin: 4px;
+}
+
+.itemsInline {
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    line-height: 1.2;
+    color: #333333;
+    display: block;
+    width: 27%;
+    background: #fff;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 30px 0 53px;
+}
+
+.itemsFormColumn {
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    line-height: 1.2;
+    color: #333333;
+    display: block;
+    width: 100%;
+    background: #fff;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 30px 0 53px;
+}
+
+#loginButton {
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #e0e0e0;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background: #8c1919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    transition: all 0.4s;
+    position: relative;
+    z-index: 1;
+}
+
+#loginButton:hover {
+    background-color: #cccccc;
+    color: black
+}
+
+#mainButton {
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #e0e0e0;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    transition: all 0.4s;
+    position: relative;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+#mainButton:hover {
+    background-color: #cccccc;
+    color: black;
+    border: 1px solid black;
+}
+
+
+/* footer */
+
+.helpMessage {
+    margin: 10px;
+    vertical-align: top;
+}
+
+.helpMessage a {
+    font-family: Montserrat-Regular;
+    font-size: 16px;
+    color: #0e0d0d;
+    line-height: 1.4;
+}
+
+.helpMessage span {
+    font-family: Montserrat-Regular;
+    font-size: 16px;
+    color: #0e0d0d;
+    line-height: 1.4;
+}
+
+footer {
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.focus-input {
+    display: block;
+    position: absolute;
+    border-radius: 25px;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 0px 0px;
+    color: rgba(234, 8, 0, 0.6);
+}
+
+.focus-inputInline {
+    display: block;
+    position: absolute;
+    border-radius: 25px;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 0px 0px;
+    color: rgba(234, 8, 0, 0.6);
+}
+
+.itemsFormColumn:focus+.focus-input {
+    -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+    animation: anim-shadow 0.5s ease-in-out forwards;
+}
+
+.itemsInline:focus+.focus-inputInline {
+    -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+    animation: anim-shadow 0.5s ease-in-out forwards;
+}
+
+@-webkit-keyframes anim-shadow {
+    to {
+        box-shadow: 0px 0px 80px 30px;
+        opacity: 0;
+    }
+}
+
+@keyframes anim-shadow {
+    to {
+        box-shadow: 0px 0px 80px 30px;
+        opacity: 0;
+    }
+}
+
+
+/*[ Focus simbols]*/
+
+.symbol-input {
+    font-size: 15px;
+    color: #999999;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    border-radius: 25px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 30px;
+    pointer-events: none;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.itemsFormColumn:focus+.focus-input+.symbol-input {
+    color: #fb2600;
+    padding-left: 23px;
+}
+
+
+/***************************************/

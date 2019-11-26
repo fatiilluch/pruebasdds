@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Crear Cuenta | Que Me Pongo</title>
+    <link rel="stylesheet" type="text/css" href="css/estilosLogin.css">
+    <link rel="icon" type="image/png" href="images/icons/padlock.ico" />
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/checkIn.js"></script>
+</head>
+
+<body>
+    <section>
+        <form id="login" method="POST" action="" onsubmit="checkPass()">
+            <div id="perfil" class="itemForm"><img src="images/logo.JPG" width="130px"></div>
+            <div id="nick" class="itemForm"><span>Crear Cuenta</span></div>
+            <div class="itemForm">
+                <input class="itemsInline" type="text" id="dni" name="dni" placeholder="DNI">
+                <span class="focus-inputInline"></span>
+                <input class="itemsInline" type="text" id="telef" name="Telefono" placeholder="Telefono">
+                <span class="focus-inputInline"></span>
+            </div>
+
+            <div class="itemForm">
+                <input class="itemsFormColumn" type="text" id="username" name="username" placeholder="Nombre De Usuario">
+                <span class="focus-input"></span>
+                <span class="symbol-input">
+                </span>
+            </div>
+            <div class="itemForm">
+                <input class="itemsFormColumn" type="text" id="mail" name="mail" placeholder="Mail">
+                <span class="focus-input"></span>
+                <span class="symbol-input">
+			</span>
+            </div>
+            <div class="itemForm">
+                <input class="itemsFormColumn" id="pass" type="password" name="pass" placeholder="Password">
+                <span class="focus-input"></span>
+                <span class="symbol-input">
+			<i class="fa fa-lock"></i></span>
+            </div>
+            <div class="itemForm">
+                <input class="itemsFormColumn" id="passCheck" type="password" name="pass" placeholder="Confirm Password">
+                <span class="focus-input"></span>
+                <span class="symbol-input">
+                <i class="fa fa-lock"></i></span>
+            </div>
+            <div class="itemForm">
+                <button id="loginButton">Crear Cuenta</button>
+            </div>
+
+        </form>
+
+
+    </section>
+    <footer>
+    </footer>
+
+
+</body>
+
+</html>

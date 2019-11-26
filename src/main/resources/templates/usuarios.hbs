@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form Login | QueMePongo</title>
+	<link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+	<div class="box">
+		<img class="logo" src="img/logo.jpg" alt="Logo DDS">
+		<h1>Usuarios</h1>
+		<form>
+		<!-- En sí aca habría que poner lo de cada tipo, hay que ver como importar y usar las variables -->
+		<h2>Usuarios:</h2>
+		<select name="OS" class="select">
+			  <option value="">Usuario</option>
+			{{#each usuarios}}
+
+                    <option value="{{id}}">{{username}}</option>
+			{{/each}}
+		</select>
+		
+		</form>
+		<a href="./login.hbs" class="aceptar">Aceptar</a>
+		<a href="./login.hbs" class="atras">Atrás</a>
+	</div>
+</body>
+</html>>
